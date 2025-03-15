@@ -1,0 +1,86 @@
+/* General Styles */
+.projects {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .projects-header {
+    font-size: 39px;
+    color: #1e40af;
+    margin-bottom: 20px;
+  }
+  .project-para {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 40px;
+  }
+  /* Projects List */
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  .project-details {
+    margin-top: 15px;
+  }
+  
+  .project-title {
+    font-size: 24px;
+    font-family: "Son Shareef", sans-serif;
+    color: darkblue;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    font-family: "Son Shareef", sans-serif;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-list {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .project-card {
+      padding: 15px;
+    }
+  
+    .project-title {
+      font-size: 20px;
+    }
+  
+    .project-description {
+      font-size: 14px;
+    }
+  }

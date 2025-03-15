@@ -1,0 +1,173 @@
+.about {
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+}
+
+/* Left Side - Text */
+.about-info {
+    width: 50%;
+}
+
+.about-heading {
+    font-size: 2.7rem;
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+.about-para {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Right Side - Image */
+.about-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 520px;
+    margin-left: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+.about-button {
+    margin-top: 20px;
+    background-color: #1e40af;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-button:hover {
+    background-color: #1e3a8a;
+    transform: scale(1.05);
+}
+
+/* 📱 Mobile & Tablet Responsive */
+@media (max-width: 1024px) {
+    .about {
+        padding: 4rem 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-image img {
+        max-width: 70%;
+    }
+}
+
+
+
+
+/* Services Section */
+/* General Styles */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .services-header {
+    font-size: 39px;
+    color: #1e40af;
+    margin-bottom: 20px;
+  }
+  
+  .services-intro {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 40px;
+  }
+  
+  /* Services List */
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-title {
+    font-size: 24px;
+    color: darkblue;
+  }
+  
+  .service-description {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  /* Button */
+  .services-button {
+    background-color: darkblue;
+    color: white;
+    font-size: 18px;
+    font-family: "Son Shareef", sans-serif;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .services-button:hover {
+    background-color: navy;
+  }
+  
